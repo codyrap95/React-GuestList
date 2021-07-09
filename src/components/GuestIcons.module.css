@@ -1,0 +1,10 @@
+.guestIcons {
+  display: flex;
+  flex-direction: row;
+}
+.guestIcon {
+  color: rgb(0, 255, 0);
+}
+.inactive {
+  color: grey;
+}

@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useContext, useRef, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { GuestContext } from "./store/guestContext";
 import NewGuestForm from "./components/NewGuestForm";
 import GuestList from "./components/GuestList";

@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import GuestIcons from "./GuestIcons";
 import classes from "./GuestList.module.css";
 export default function GuestList(props) {
   const guestList = props.guestList;
@@ -12,14 +13,11 @@ export default function GuestList(props) {
               <li>
                 {guest.firstName} {guest.lastName}
               </li>
-              <li>Received Invite: {guest.receivedInvite.toString()}</li>
-              <li>Knows About: {guest.knowsAbout.toString()}</li>
-              <li>
-                Is Coming:
-                {guest.isComing === null
-                  ? "Unknown yet"
-                  : guest.isComing.toString()}
-              </li>
+              <GuestIcons
+                receivedInvite={guest.receivedInvite}
+                knowsAbout={guest.knowsAbout}
+                isComing={guest.isComing}
+              />
             </ul>
           </li>
         ))}
