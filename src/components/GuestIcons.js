@@ -9,19 +9,19 @@ export default function GuestIcons(props) {
       <li
         className={`${classes.guestIcon} ${knowsAbout ? "" : classes.inactive}`}
       >
-        s
+        S
       </li>
       <li
         className={`${classes.guestIcon} ${
           receivedInvite ? "" : classes.inactive
         }`}
       >
-        p
+        P
       </li>
       <li
         className={`${classes.guestIcon} ${isComing ? "" : classes.inactive}`}
       >
-        c
+        C
       </li>
     </ul>
   );

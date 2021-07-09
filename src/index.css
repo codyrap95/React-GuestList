@@ -12,6 +12,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 23rem;
+  margin: 0 auto;
 }
 ul {
   list-style-type: none;
