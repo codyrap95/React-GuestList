@@ -17,9 +17,21 @@ export default function NewGuestForm(props) {
     <Card>
       <form className={classes.newGuestForm} onSubmit={submitHandler}>
         <label htmlFor="firstName">First Name:</label>
-        <input ref={firstNameRef} type="text" name="FirstName" id="firstName" />
+        <input
+          className={classes.textField}
+          ref={firstNameRef}
+          type="text"
+          name="FirstName"
+          id="firstName"
+        />
         <label htmlFor="lastName">Last Name:</label>
-        <input ref={lastNameRef} type="text" name="lastName" id="lastName" />
+        <input
+          className={classes.textField}
+          ref={lastNameRef}
+          type="text"
+          name="lastName"
+          id="lastName"
+        />
         <button className={classes.submitBtn} type="submit">
           Submit
         </button>

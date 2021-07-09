@@ -5,4 +5,13 @@
 }
 .submitBtn {
   margin-top: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: darkmagenta;
+  color: white;
+  padding: 0.6rem;
+}
+.textField {
+  padding: 0.5rem;
 }
