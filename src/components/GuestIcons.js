@@ -3,7 +3,7 @@ import classes from "./GuestIcons.module.css";
 export default function GuestIcons(props) {
   const [knowsAbout, setKnowsAbout] = useState(props.knowsAbout);
   const [receivedInvite, setReceivedInvite] = useState(props.receivedInvite);
-  const [isComing, setIsComing] = useState(props.setIsComing);
+  const [isComing, setIsComing] = useState(props.isComing);
   return (
     <ul className={classes.guestIcons}>
       <li

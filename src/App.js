@@ -9,7 +9,13 @@ function App() {
   const guestCtx = useContext(GuestContext);
   const [guestList, setGuestList] = useState(guestCtx.guestList);
   const onAddUser = (newUser) => {
-    guestCtx.addGuest(newUser.firstName, newUser.lastName);
+    guestCtx.addGuest(
+      newUser.firstName,
+      newUser.lastName,
+      newUser.knowsAbout,
+      newUser.receivedInvite,
+      newUser.isComing
+    );
     setGuestList([...guestCtx.guestList]);
     console.log(guestList);
   };

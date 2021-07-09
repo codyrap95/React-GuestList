@@ -16,3 +16,8 @@
 .textField {
   padding: 0.5rem;
 }
+.checkboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

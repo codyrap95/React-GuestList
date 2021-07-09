@@ -7,20 +7,22 @@ export default function GuestList(props) {
   return (
     <Card>
       <ul className={classes.guestList}>
-        {guestList.map((guest) => (
-          <li key={guest.id}>
-            <ul className={classes.guest}>
-              <li>
-                {guest.firstName} {guest.lastName}
+        {guestList.length < 1
+          ? "Guest List is Empty."
+          : guestList.map((guest) => (
+              <li key={guest.id}>
+                <ul className={classes.guest}>
+                  <li>
+                    {guest.firstName} {guest.lastName}
+                  </li>
+                  <GuestIcons
+                    receivedInvite={guest.receivedInvite}
+                    knowsAbout={guest.knowsAbout}
+                    isComing={guest.isComing}
+                  />
+                </ul>
               </li>
-              <GuestIcons
-                receivedInvite={guest.receivedInvite}
-                knowsAbout={guest.knowsAbout}
-                isComing={guest.isComing}
-              />
-            </ul>
-          </li>
-        ))}
+            ))}
       </ul>
     </Card>
   );
