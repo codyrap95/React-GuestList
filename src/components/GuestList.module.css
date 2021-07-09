@@ -1,0 +1,9 @@
+.guestList {
+  list-style-type: none;
+  padding: 0;
+}
+.guest {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}

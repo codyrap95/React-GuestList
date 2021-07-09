@@ -1,14 +1,14 @@
 import React from "react";
 import Card from "./Card";
-
+import classes from "./GuestList.module.css";
 export default function GuestList(props) {
   const guestList = props.guestList;
   return (
     <Card>
-      <ul>
+      <ul className={classes.guestList}>
         {guestList.map((guest) => (
           <li key={guest.id}>
-            <ul>
+            <ul className={classes.guest}>
               <li>First Name: {guest.firstName}</li>
               <li>Last Name: {guest.lastName}</li>
               <li>Received Invite: {guest.receivedInvite.toString()}</li>
