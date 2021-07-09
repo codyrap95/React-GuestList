@@ -7,7 +7,7 @@ export default function GuestList(props) {
   return (
     <Card>
       <ul className={classes.guestList}>
-        {guestList.length < 1
+        {guestList.length === 0
           ? "Guest List is Empty."
           : guestList.map((guest) => (
               <li key={guest.id}>
