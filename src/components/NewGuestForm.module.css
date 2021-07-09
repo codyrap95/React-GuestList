@@ -1,0 +1,8 @@
+.newGuestForm {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+.submitBtn {
+  margin-top: 1rem;
+}
