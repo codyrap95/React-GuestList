@@ -9,8 +9,9 @@ export default function GuestList(props) {
         {guestList.map((guest) => (
           <li key={guest.id}>
             <ul className={classes.guest}>
-              <li>First Name: {guest.firstName}</li>
-              <li>Last Name: {guest.lastName}</li>
+              <li>
+                {guest.firstName} {guest.lastName}
+              </li>
               <li>Received Invite: {guest.receivedInvite.toString()}</li>
               <li>Knows About: {guest.knowsAbout.toString()}</li>
               <li>
